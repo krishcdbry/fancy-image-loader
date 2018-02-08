@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack -w",
-    "build": "webpack"
+    "build-live": "webpack --progress -w",
+    "build": "webpack && webpack --config webpack.demo.config.js --progress"
   },
   "author": "krishcdbry",
   "license": "ISC",
