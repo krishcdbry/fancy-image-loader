@@ -24,8 +24,22 @@ good practice to show a placeholder until the image has loaded. Facebook takes t
 level by showing placeholder for the entire page until the content has loaded.
 
 
+Getting Started
+-----
+
+```javascript
+npm i fancy-image-loader 
+```
+
+or
+
+```javascript
+npm install fancy-image-loader 
+```
+
 Usage
 -----
+
 
 ```javascript
 import React from 'react';

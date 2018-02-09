@@ -1,6 +1,6 @@
 {
   "name": "fancy-image-loader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A generic React component to show a placeholder in place of an image while the image is loading and replace the placeholder with the image when the image has loaded.",
   "main": "dist/index.js",
   "scripts": {
