@@ -37,9 +37,8 @@ or
 npm install fancy-image-loader 
 ```
 
-Usage
+Usage - Example 1
 -----
-
 
 ```javascript
 import React from 'react';
@@ -63,10 +62,56 @@ render(
         error ={error}
         class="img"
         alt = "Awesome image dude"
-        key = {generateRandom()}
         style = {{borderRadius : '9px'}}
         height="200px"
         width="300px"></FancyImageLoader>
+, document.getElementById('root'));
+
+```
+
+Usage - Example 2 (HTML Placeholer)
+-----
+
+```javascript
+import React from 'react';
+import {render} from 'react-dom';
+import FancyImageLoader from 'fancy-image-loader';
+
+let itemHtmlStyle = {
+    display: "flex",
+    justifyContent: "center",
+    height: "100%",
+    alignItems: "center",
+    textAlign: "center",
+    background: "azure"
+}
+
+let placeholder = function () {
+    return  <img src="http://www.tbaf.org.tw/event/2016safe/imgs/loader1.gif" style={itemStyle}/>;
+}
+
+let placeholderHtml = function () {
+return <div style={itemHtmlStyle}>
+            Loading image please wait
+        </div>  
+}
+
+let errorHtml = function () {
+return <div style={itemHtmlStyle}>
+            Sorry image failed
+        </div>  
+}
+
+let imageItem = "https://images.alphacoders.com/151/151291.jpg";
+
+render(
+  <FancyImageLoader 
+        src={item}
+        placeholder={placeholderHtml}
+        error ={errorHtml}
+        class="fancy-image"
+        alt = "Awesome image dude"
+        style = {{borderRadius : '9px'}}></FancyImageLoader>
 , document.getElementById('root'));
 
 ```
@@ -79,7 +124,7 @@ Name          | Required | Type     | Description |
 --------------|----------|----------|--------------
 `src`         | Yes      | string   | Source path of the image to be loaded + displayed   
 `placeholder` | Yes      | function | A Placeholder function which returns simple react element html/image to be dispayed before image loads/loading
-`error`       | No       | function | An optional error function which returns simple HTML/image to be displayed when image failed to load
+`error`       | No       | function | An optional error function which returns simple HTML/image to be displayed when image failed to load. If error doesn't provided then placeholder will stay in place.
 `class`       | No       | string   | css class property for the image element
 `width`       | No       | string   | An optioal width attribute string 100px, 200px etc
 `height`      | No       | string   | Height attribute string 100px, 200px etc
@@ -92,6 +137,9 @@ Name          | Required | Type     | Description |
 
 ## Author
 Krishcdbry [krishcdbry@gmail.com]
+
+## Demo
+Click here [https://krishcdbry.github.io/fancy-image-loader/demo/]
 
 ## Licence
 MIT @[krishcdbry](krishcdbry.com)
