@@ -4,7 +4,7 @@ and replace the placeholder with the image when the image has loaded.
 
 Features:
 1. Placeholder can be another image or an HTML element
-2. It should be possible to style the image
+2. You can style the placeholder/error element
 3. All attributes of <img> tag are supported
 
 ----------------------------------------------------------------------------------------------------
