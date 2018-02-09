@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-live": "webpack --progress -w",
-    "build": "webpack && webpack --config webpack.demo.config.js --progress", 
-    "build-prod" : "set NODE_ENV=production && webpack && webpack --config webpack.demo.config.js --progress"
+    "build-main": "webpack --progress", 
+    "build-demo" : "webpack --config webpack.demo.config.js --progress",
+    "build-prod" : "set NODE_ENV=production && webpack --progress && webpack --config webpack.demo.config.js --progress -p",
+    "build" : "npm run build-main && npm run build-demo"
   },
 
   "author": "krishcdbry",
