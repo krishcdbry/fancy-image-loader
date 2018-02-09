@@ -1,13 +1,13 @@
 {
   "name": "fancy-image-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A generic React component to show a placeholder in place of an image while the image is loading and replace the placeholder with the image when the image has loaded.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-live": "webpack --progress -w",
     "build": "webpack && webpack --config webpack.demo.config.js --progress", 
-    "build-prod" : "set NODE_ENV=production webpack && webpack --config webpack.demo.config.js --progress"
+    "build-prod" : "set NODE_ENV=production && webpack && webpack --config webpack.demo.config.js --progress"
   },
 
   "author": "krishcdbry",
