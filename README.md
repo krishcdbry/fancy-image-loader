@@ -1,4 +1,5 @@
 # fancy-image-loader  [![NPM version](https://img.shields.io/npm/v/fancy-image-loader.svg)](https://www.npmjs.com/package/fancy-image-loader)
+[![Downloads](http://img.shields.io/npm/dm/fancy-image-loader.svg)](https://npmjs.org/package/fancy-image-loader)
 A generic React component to show a placeholder in place of an image while the image is loading
 and replace the placeholder with the image when the image has loaded.
 

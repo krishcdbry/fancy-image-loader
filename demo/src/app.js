@@ -27,6 +27,7 @@ class App extends React.Component {
         textAlign: "center",
         background: "azure"
       }
+      
       let placeholder = function () {
           return  <img src="http://www.tbaf.org.tw/event/2016safe/imgs/loader1.gif" style={itemStyle}/>;
       }
