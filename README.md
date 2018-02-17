@@ -137,10 +137,10 @@ Name          | Required | Type     | Description |
 
 
 ## Author
-Krishcdbry [krishcdbry@gmail.com]
+Krishcdbry (krishcdbry@gmail.com)
 
 ## Demo
-Click here [https://krishcdbry.github.io/fancy-image-loader/demo/]
+Click here (https://krishcdbry.github.io/fancy-image-loader/demo/)
 
 ## Licence
 MIT @[krishcdbry](krishcdbry.com)
